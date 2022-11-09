@@ -1,4 +1,4 @@
-var slideshowDuration = 1000;
+var slideshowDuration = 3000;
 var slideshow=$('.main-content .slideshow');
 var x = 0;
 var music = document.getElementById("player");
@@ -224,7 +224,7 @@ slideshow.data('timeout',timeout);
 
 $("#player").bind("ended", function(){
   x=x+1;
-  music.src = x%3 + ".mp3";
+  music.src = x%6 + ".mp3";
   music.load();
   music.play();       
   });
