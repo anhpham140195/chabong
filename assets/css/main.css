@@ -2696,6 +2696,18 @@
 	}
 
 /* Section/Article */
+	
+	article {
+		margin: 1px 1px 1px 1px;
+	}
+
+	article:first-of-type {
+		margin-left: 1px 1px 1px 1px;
+	}
+
+	article:last-of-type {
+		margin-right: 0;
+	}
 
 	section.special, article.special {
 		text-align: center;
